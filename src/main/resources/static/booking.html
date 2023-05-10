@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đặt phòng</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <div id="menu-bar" class="fas fa-bars"></div>
+        <a href="#" class="logo"><span>W</span>Hotel</a>
+
+        <nav class="navbar">
+            <a href="booking.html">Đặt phòng</a>
+            <a href="history.html">Lịch sử</a>
+            <a href="user.html">Thông tin cá nhân</a>
+        </nav>
+
+        <div class="icons">
+            <a href="home.html"><i class="fas fa-right-from-bracket" id="login-btn"></i></a>
+        </div>
+    </header>
+
+    <section class="book" id="book">
+        <h1 class="heading">
+            <br><br><br>
+            <span>C</span>
+            <span>H</span>
+            <span>Ọ</span>
+            <span>N</span>
+            <span class="space"></span>
+            <span>T</span>
+            <span>H</span>
+            <span>Ờ</span>
+            <span>I</span>
+            <span class="space"></span>
+            <span>G</span>
+            <span>I</span>
+            <span>A</span>
+            <span>N</span>
+        </h1>
+
+        <div class="row">
+            <form action="">
+                <div class="inputBox">
+                    <h3>Check-in</h3>
+                    <input type="date">
+                </div>
+                <div class="inputBox">
+                    <h3>Check-out</h3>
+                    <input type="date">
+                </div>
+                <input type="submit" class="btn" formaction="#pickroom" value="TÌM KIẾM">
+            </form>
+        </div>
+    </section>
+
+    <section class="pickroom" id="pickroom">
+        <h1 class="heading">
+            <span>C</span>
+            <span>H</span>
+            <span>Ọ</span>
+            <span>N</span>
+            <span class="space"></span>
+            <span>P</span>
+            <span>H</span>
+            <span>Ò</span>
+            <span>N</span>
+            <span>G</span>
+        </h1>
+
+        <div class="box-container">
+            <div class="box">
+                <img decoding="async" src="images/standardroom.jpg" alt="">
+                <div class="content">
+                    <h3><i class="fas fa-map-marker-alt"></i> Phòng tiêu chuẩn </h3>
+                    <p>Diện tích: 18m&#178;. Phù hợp với 1-2 người, đầy đủ nội thất, tiện nghi. Giá cả phải chăng, hứa hẹn đem lại trải nghiệm thú vị.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price"> 1.000.000VND/Ngày</div>
+                    <div class="price"> Còn 10 phòng</div>
+                    <a href="#overview"><button class="btn">Thêm</button></a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img decoding="async" src="images/superiorroom.jpg" alt="">
+                <div class="content">
+                    <h3><i class="fas fa-map-marker-alt"></i> Phòng trung cấp </h3>
+                    <p>Diện tích: 25m&#178;. Phù hợp 1-2 người. Đầy đủ nội thất, tiện nghi đầy đủ, hướng nhìn đẹp ra biển.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price"> 2.000.000VND/Ngày</div>
+                    <div class="price"> Còn 5 phòng</div>
+                    <a href="#overview"><button class="btn">Thêm</button></a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img decoding="async" src="images/deluxeroom.jpg" alt="">
+                <div class="content">
+                    <h3><i class="fas fa-map-marker-alt"></i> Phòng cao cấp </h3>
+                    <p>Diện tích: 30m&#178;. Phù hợp 1-2 người. Nội thất sang trọng, cao cấp. Nằm trên tầng cao, hướng nhìn đẹp.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price"> 3.000.000VND/Ngày</div>
+                    <div class="price"> Còn 0 phòng</div>
+                    <a href="#overview"><button class="btn" disabled="true">Thêm</button></a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img decoding="async" src="images/suitroom.jpg" alt="">
+                <div class="content">
+                    <h3><i class="fas fa-map-marker-alt"></i> Phòng VIP1 </h3>
+                    <p>Diện tích: 50m&#178;. Phù hợp 1-2 người. Nội thất sang trọng, đầy đủ tiện nghi. Có 1 khách, 1 ngủ, 1 vệ sinh, 1 bể bơi ngoài trời. Góc nhìn đẹp.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="price"> 5.000.000VND/Ngày</div>
+                    <div class="price"> Còn 3 phòng</div>
+                    <a href="#overview"><button class="btn">Thêm</button></a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img decoding="async" src="images/executiveroom.jpg" alt="">
+                <div class="content">
+                    <h3><i class="fas fa-map-marker-alt"></i> Phòng VIP2 </h3>
+                    <p>Diện tích: 60m&#178;. Phù hợp 2-4 người. Nội thất sang trọng, đầy đủ tiện nghi. Có 1 khách, 2 ngủ, 1 vệ sinh, 1 bể bơi ngoài trời. Góc nhìn đẹp.</p>
+                    <div class="stars"> 
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="price"> 7.000.000VND/Ngày</div>
+                    <div class="price"> Còn 7 phòng</div>
+                    <a href="#overview"><button class="btn">Thêm</button></a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img decoding="async" src="images/connectingroom.jpg" alt="">
+                <div class="content">
+                    <h3><i class="fas fa-map-marker-alt"></i> Phòng gia đình </h3>
+                    <p>Diện tích: 50m&#178;. Phù hợp cho gia đình. Nội thất sang trọng, đầy đủ tiện nghi. Có 1 khách, 2 ngủ, 1 vệ sinh, 1 bể bơi ngoài trời. Góc nhìn đẹp.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="price"> 4.500.000VND/Ngày</div>
+                    <div class="price"> Còn 10 phòng</div>
+                    <a href="#overview"><button class="btn">Thêm</button></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="overview" id="overview">
+        <h1 class="heading">
+            <br><br><br>
+            <span>X</span>
+            <span>E</span>
+            <span>M</span>
+            <span class="space"></span>
+            <span>T</span>
+            <span>R</span>
+            <span>Ư</span>
+            <span>Ớ</span>
+            <span>C</span>
+        </h1>
+
+        <table class="">
+            <br><br>
+            <thead>
+                <tr>
+                    <th>Số thứ tự</th>
+                    <th>Loại phòng</th>
+                    <th>Ngày đến</th>
+                    <th>Ngày đi</th>
+                    <th>Giá tiền</th>
+                    <th>Hành động</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="border-right: 1px solid #ddd;">1</td>
+                    <td style="border-right: 1px solid #ddd;">Phòng tiêu chuẩn</td>
+                    <td style="border-right: 1px solid #ddd;">12/05/2023</td>
+                    <td style="border-right: 1px solid #ddd;">15/05/2023</td>
+                    <td style="border-right: 1px solid #ddd;">1000000 VND</td>
+                    <td>
+                        <input type="number" class="btn-addroom" placeholder="Số phòng thuê">
+                        <button class="btn btn-danger">Xoá</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="border-right: 1px solid #ddd;">2</td>
+                    <td style="border-right: 1px solid #ddd;">Phòng VIP1</td>
+                    <td style="border-right: 1px solid #ddd;">12/05/2023</td>
+                    <td style="border-right: 1px solid #ddd;">15/05/2023</td>
+                    <td style="border-right: 1px solid #ddd;">5000000 VND</td>
+                    <td>
+                        <input type="number" class="btn-addroom" placeholder="Số phòng thuê">
+                        <button class="btn btn-danger">Xoá</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table><br>
+        <br><h1>TỔNG THANH TOÁN: 6000000 VND</h1><br>
+        <a href="history.html"><button class="btn">Xác nhận</button>&emsp;&emsp;</a>
+        <a href="#pickroom"><button class="btn">Thêm phòng</button></a>
+    </section>
+
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>Bài tập lớn</h3>
+                <p>Website đặt phòng khách sạn</p>
+            </div>
+            <div class="box">
+                <h3>Thành viên</h3>
+                <p>Đàm Tuấn Dũng</p>
+                <p>Nguyễn Phi Hùng</p>
+                <p>Hoàng Thị Kim Ngân</p>
+                <p>Võ Quốc Tuấn</p>
+            </div>
+            <div class="box">
+                <h3>Liên kết nhanh</h3>
+                <a href="booking.html">Đặt phòng</a>
+                <a href="history.html">Lịch sử</a>
+                <a href="user.html">Thông tin cá nhân</a>
+            </div>
+            <div class="box">
+                <h3>Liên hệ</h3>
+                <a href="#">Github</a>
+            </div>
+        </div>
+        <h1 class="credit"> created by <span>Team17</span> | Lập Trình Web</h1>
+    </section>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js" defer data-deferred="1"></script>
+    <script src="js/script.js" defer data-deferred="1"></script>
+</body>
+</html>
