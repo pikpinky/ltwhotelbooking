@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import com.ltwhotel.dao.UserDAO;
-import com.ltwhotel.model.User;
+import com.ltwhotel.entity.User;
 
 public class UserController {
 	UserDAO ud = new UserDAO();

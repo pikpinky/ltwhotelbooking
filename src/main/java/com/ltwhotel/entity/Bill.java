@@ -1,10 +1,30 @@
-package com.ltwhotel.model;
+package com.ltwhotel.entity;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "bill")
 public class Bill {
+	
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int idbill;
+	
+	@Column
 	private String checkin;
+	
+	@Column
 	private String checkout;
+	
+	@Column
 	private int day;
+	
+	@Column
 	private float money;
 	
 	public Bill() {

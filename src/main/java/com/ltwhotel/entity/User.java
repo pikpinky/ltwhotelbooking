@@ -1,27 +1,51 @@
-package com.ltwhotel.model;
+package com.ltwhotel.entity;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "user")
 public class User {
+	
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
+	
+	@Column
 	private String username;
+	
+	@Column
 	private String password;
+	
+	@Column
 	private String cizID;
+	
+	@Column
 	private String fullname;
-	private String birthday;
+	
+	@Column
 	private String address;
+	
+	@Column
 	private String phone;
+	
+	@Column
 	private String email;
 	
 	public User(){
 	}
 	
-	public User(int id, String username, String password, String cizID, String fullname, String birthday, String phone, String email, String address) {
+	public User(int id, String username, String password, String cizID, String fullname, String phone, String email, String address) {
 		super();
 		this.id = id;
 		this.username = username;
 		this.password = password;
 		this.cizID = cizID;
 		this.fullname = fullname;
-		this.birthday = birthday;
 		this.email = email;
 		this.phone = phone;
 		this.address = address;
@@ -66,15 +90,7 @@ public class User {
 	public void setgetFullname(String fullname) {
 		this.fullname = fullname;
 	}
-	
-	public String getBirthday() {
-		return birthday;
-	}
 
-	public void setBirthday(String birthday) {
-		this.birthday = birthday;
-	}
-	
 	public String getEmail() {
 		return email;
 	}

@@ -3,7 +3,7 @@ package com.ltwhotel.dao;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 
-import com.ltwhotel.model.User;
+import com.ltwhotel.entity.User;
 
 
 public class UserDAO extends DAO {
